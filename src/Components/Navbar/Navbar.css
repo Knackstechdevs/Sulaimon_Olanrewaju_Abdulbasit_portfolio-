@@ -1,0 +1,133 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 170px;
+}
+
+.navbar .logo {
+  width: 220px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 60px;
+  font-size: 20px;
+}
+
+.nav-menu li {
+  padding-bottom: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-connect {
+  padding: 10px 20px;
+  border-radius: 50px;
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.nav-connect:hover {
+  transform: scale(1.05);
+}
+
+.active::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0px;
+  height: 2px;
+  width: 60px;
+  background: linear-gradient(264deg, #da7c25 -5.09%, #b923e1 106.28%);
+}
+
+.anchor-link {
+  text-decoration: none;
+  color: white;
+}
+
+.hamburger-menu {
+  cursor: pointer;
+  width: 30px;
+  user-select: none;
+  position: relative;
+}
+
+.hamburger-menu span {
+  display: block;
+  height: 3px;
+  margin: 5px 0;
+  background-color: white;
+  border-radius: 2px;
+  transition: 0.4s;
+}
+
+.hamburger-close {
+  display: block;
+  height: 3px;
+  margin: 5px 0;
+  background-color: transparent;
+  padding: 5px;
+  border-radius: 2px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.hamburger-close {
+    display: none;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    margin: 20px 40px;
+  }
+
+  .nav-connect {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: fixed;
+    position: absolute;
+    right: 30px;
+  }
+
+  .hamburger-close {
+    display: block; 
+    position: relative;
+    top: 30px;
+    left: 290px;
+    width: 30px;
+  }
+
+  .nav-menu {
+    position: fixed;
+    flex-direction: column;
+    align-items: start;
+    top: 0px;
+    gap: 30px;
+    background-color: #1f0016;
+    width: 350px;
+    height: 100%;
+    z-index: 2;
+    transition: right 0.3s;
+    right: -350px;
+  }
+
+  .nav-menu li {
+    font-size: 20px;
+    padding-left: 100px;
+    flex-direction: row;
+    gap: 20px;
+  }
+}
