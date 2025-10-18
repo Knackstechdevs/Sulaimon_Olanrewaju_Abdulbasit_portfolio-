@@ -1,6 +1,6 @@
 import React from "react";
 import "./Skills.css";
-import profile2 from "../../assets/profile2.jpg";
+import Project2 from "../../assets/Profile2.jpg";
 
 const Skills = () => {
   return (
@@ -10,7 +10,7 @@ const Skills = () => {
       </div>
       <div className="skills-section">
         <div className="skills-left">
-          <img src={profile2} alt="" />
+          <img src={Project2} alt="" />
         </div>
         <div className="skills-right">
           <div className="skills-para">

@@ -1,6 +1,6 @@
 import React from 'react'
 import './Mywork.css'
-import mywork_data from '../../assets/Mywork_data.js'
+import mywork_data from '../../assets/mywork_data.js'
 
 const Mywork = () => {
   return (
