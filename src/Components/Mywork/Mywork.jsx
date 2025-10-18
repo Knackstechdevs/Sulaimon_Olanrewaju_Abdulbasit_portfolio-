@@ -17,7 +17,7 @@ const Mywork = () => {
             <p>Show more . . .</p>
         </div>
     </div>
-  )git
+  );
 }
 
 export default Mywork
