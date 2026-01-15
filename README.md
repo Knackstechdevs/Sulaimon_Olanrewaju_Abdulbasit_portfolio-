@@ -27,3 +27,8 @@ This is the source code for my personal portfolio website, showcasing my skills,
 
 
 - Modern UI/UX: A clean, intuitive, and visually appealing design
+
+## Future update
+- Search engine optimaization
+- Backend to send message insite
+- Send message from the contact form (make better)
